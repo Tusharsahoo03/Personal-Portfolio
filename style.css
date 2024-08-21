@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NL:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NL:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NL:wght@100..400&family=Zain:wght@200;300;400;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+.image > img {
+  height: 80vh;
+  border-radius: 20px;
+}
+
+#img1 {
+  image-rendering: pixelated;
+  image-orientation: flip;
+}
+.mainContainer > .image {
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+/* .rest-info {
+  align-items: center;
+  height: 80%;
+  position: absolute;
+  left: 2%;
+} */
+.fix {
+  align-items: center;
+  height: 80%;
+  padding-top: 20%;
+  top: 5%;
+}
+
+.name {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#aboutme {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  font-size: 22px;
+}
+.second_container {
+  position: relative;
+  top: 20%;
+}
+.third-section {
+  position: relative;
+  left: 5%;
+}
+.themes {
+  position: relative;
+  top: 40px;
+  border-radius: 50%;
+  background-color: grey;
+  width: 60px;
+  padding: 5px 20px;
+}
+.fontParaMain {
+  padding-top: 100px;
+}
+.fontPara > p {
+  color: red;
+  width: 40px;
+  font-size: 30px;
+}
+.fontPara > span {
+  padding: 15px 0px;
+  display: block;
+}
+.fontPara > span > p {
+  cursor: pointer;
+}
+.home {
+  background-color: green;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile,
+.Portfolio,
+.contact,
+.blog {
+  background-color: rgba(128, 128, 128, 0.658);
+  border-radius: 50%;
+  padding: 5px 20px;
+  width: 60px;
+}
+.home:hover::after {
+  content: "Home";
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translateY(-50%);
+  padding: 5px 15px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 10;
+}
+.profile:hover::before {
+  background-color: orangered;
+}
+.profile:hover::after {
+  content: "Profile";
+  position: absolute;
+  top: 52%;
+  left: 70px;
+  transform: translateY(-50%);
+  padding: 5px 15px;
+  background-color: rgba(128, 128, 128, 0.658);
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 16px;
+}
+.Portfolio:hover::after {
+  content: "Portfolio";
+  position: absolute;
+  top: 65%;
+  left: 65px;
+  transform: translateY(-50%);
+  padding: 5px 12px;
+  background-color: rgba(128, 128, 128, 0.658);
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 16px;
+}
+.contact:hover::after {
+  content: "Contact";
+  position: absolute;
+  top: 79%;
+  left: 65px;
+  transform: translateY(-50%);
+  padding: 5px 15px;
+  background-color: rgba(128, 128, 128, 0.658);
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 16px;
+}
+.blog:hover::after {
+  content: "Blog";
+  position: absolute;
+  top: 93%;
+  left: 70px;
+  transform: translateY(-50%);
+  padding: 5px 15px;
+  background-color: rgba(128, 128, 128, 0.658);
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 16px;
+}
+#aboutme {
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.404); 
+  transition: background-color 0.3s ease;
+}
+.intro{
+  font-size: 29px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#hide>p{
+  font-size: 20px;
+  line-height: 2.2;
+}
+

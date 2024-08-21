@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.mainbar {
+  position: absolute;
+  top: 30%;
+}
+.firstcontainer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000,
+    0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+}
+.firstcontainer > h1 > span {
+  color: orangered;
+}
+
+.sections {
+  padding-top: 20px;
+  display: flex;
+  gap: 40px;
+  color: white;
+  padding-left: 40px;
+  line-height: 3;
+}
+.personalinfo {
+  padding-left: 40px;
+}
+.grey {
+  color: grey;
+}
+
+.thirdContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  border-radius: 10px;
+}
+.box1 {
+  height: 170px;
+  width: 250px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 4px gray;
+}
+.box1:hover {
+  transform: scale(1.1);
+}
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  box-shadow: 5px 5px 5px 4px orangered;
+  transform: scale(1.1);
+}
+.box2 {
+  height: 170px;
+  width: 250px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box3 {
+  height: 170px;
+  width: 250px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box4 {
+  height: 150px;
+  width: 250px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bigFont {
+  font-size: 37px;
+}
+#h2 {
+  position: relative;
+  left: 10%;
+}
+
+.fontPara > p {
+  color: red;
+  width: 40px;
+  font-size: 30px;
+}
+.fontPara > span {
+  padding: 15px 0px;
+  display: block;
+  background-color: orangered;
+}
+
+.home {
+  background-color: green;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+}
+.profile,
+.Portfolio,
+.contact,
+.blog {
+  background-color: rgba(128, 128, 128, 0.658);
+  border-radius: 50%;
+  padding: 5px 20px;
+  width: 60px;
+}
+.home:hover {
+  background-color: orangered;
+}
+.paddingforMob {
+  margin-bottom: 50px;
+}

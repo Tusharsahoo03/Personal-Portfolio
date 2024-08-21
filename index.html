@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="mainContainer w3-hide-medium w3-hide-small">
+        <div class="image w3-half w3-container w3-padding">
+            <img src="portfolio3.jpg" width="60%" alt="" id="img1">
+        </div>
+        <div class="w3-third">
+            <div class="fix">
+                <div class="rest-info">
+                    <h1 class="intro"><i class="fas fa-minus w3-animate-top" style="color: orangered;"></i> <span
+                            style="color: orangered;" class="w3-animate-right name">I'M TUSHAR SAHOO. <br></span><span
+                            style="color: white;padding-left: 45px;" id="webdev">WEB
+                            DEVELOPER</span> </h1>
+                </div>
+                <p style="color: white; line-height: 1.7;" id="summary">I am a developer with expertise in HTML, CSS,
+                    JavaScript, J2EE,
+                    JDBC, Servlets,
+                    JSP, and Hibernate. Passionate about creating user-friendly web interfaces and
+                    applications.
+                </p>
+                <p onclick="hover1(event)" id="h1"
+                    style="border-radius: 20px; color: white; cursor: pointer; display: inline-block; border: 2px solid orangered; padding-left: 30px; position: relative; top: 30px;">
+                    <a href="aboutme.html" style="text-decoration: none; " target="_self"> <span id="aboutme"> More
+                            about me</span> <i class="fas fa-arrow-right "
+                            style="border-radius: 50%; border-top-right-radius: 17px; border-bottom-right-radius: 17px; background-color: orangered; padding: 12px 12px; font-size: 20px;"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="third-section w3-rest">
+            <div class="fonts" style="color: white; font-size: 20px;">
+                <p class="themes" id="theme"> <i class="fa-solid fa-sun w3-spin" onclick="changeTheme()"></i></p>
+                <div class="fontParaMain" id="margin">
+                    <div class="fontPara">
+                        <span>
+                            <p class="home"> <i class="fas fa-house"></i></p>
+                        </span>
+                        <span>
+                            <a href="aboutme.html" style="text-decoration: none;">
+                                <p class="profile"><i class="fas fa-user-tie"></i></p>
+                            </a>
+
+                        </span>
+                        <span>
+                            <p class="Portfolio"><i class="fas fa-briefcase"></i></p>
+                        </span>
+                        <span>
+                            <p class="contact"><i class="fas fa-address-book"></i></p>
+                        </span>
+                        <span>
+                            <p class="blog"><i class="fas fa-blog"></i></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainContainerforMobile w3-hide-large w3-mobile w3-padding w3-container w3-black"
+        style="width: 100%; height: 100vh;" id="mainContainerforMobile">
+
+        <div class="iconPage w3-container w3-padding">
+            <p> <span onclick="Show()" id="show"> <i class="fa-solid fa-bars w3-xlarge " id="bar"></i> </span></p>
+            <div class="hideAll" id="hideall">
+                <p><i class="fa-solid fa-xmark w3-xxlarge w3-display-topright w3-padding w3-container" onclick="Cross()"
+                        id="cross" style="display: none; "></i></p>
+                <div class="hide" id="hide" style="display: none;padding-top: 50px;">
+                    <p class="w3-border-bottom w3-padding w3-text-orange"> <i class="fas fa-house"></i> <span
+                            class="w3-padding ">Home</span> </p>
+                    <p class="w3-border-bottom w3-container"> <a href="aboutme.html" style="text-decoration: none;"> <i
+                                class="fas fa-user-tie"></i> <span class="w3-padding">About</span></a> </p>
+                    <p class="w3-border-bottom w3-container"><i class="fas fa-briefcase"></i> <span
+                            class="w3-padding">Portfolio</span> </p>
+                    <p class="w3-border-bottom w3-container"><i class="fas fa-address-book"> <span
+                                class="w3-padding w3-medium">Contact</span></i></p>
+                    <p class="w3-border-bottom w3-container"><i class="fas fa-blog"></i> <span
+                            class="w3-padding">Blog</span></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="main" id="main">
+
+            <h1 class="w3-text-orange w3-container intro">I'M TUSHAR SAHOO <span class="w3-text-white">WEB
+                    DEVELOPER</span>
+            </h1>
+
+            <p class="w3-container" style="line-height: 2.2;">I am a developer with expertise in HTML, CSS, JavaScript,
+                J2EE, JDBC, Servlets, JSP, and Hibernate. Passionate about creating user-friendly web interfaces and
+                applications.</p>
+            <p onclick="About(event)" id="aboutJs"
+                style="border-radius: 20px; color: white; cursor: pointer; display: inline-block; border: 2px solid orangered; padding-left: 30px; position: relative; top: 30px;left: 10%;">
+                <a href="aboutme.html" style="text-decoration: none; " target="_self"> <span id="aboutme"> More
+                        about me</span> <i class="fas fa-arrow-right "
+                        style="border-radius: 50%; border-top-right-radius: 17px; border-bottom-right-radius: 17px; background-color: orangered; padding: 12px 12px; font-size: 20px;"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
